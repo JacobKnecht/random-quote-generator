@@ -147,5 +147,9 @@ function printQuote () {
   document.getElementById('loadQuote').style.backgroundColor = randomColor;
 }
 
+//auto-refresh the quote on the web page every 20 seconds
+var intervalID = window.setInterval(printQuote, 20000);
+
+
 //this function provides functionality to the 'Show another quote' button
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
