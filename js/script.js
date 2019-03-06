@@ -103,6 +103,7 @@ function getRandomQuote () {
 
 //creates a function to generate a random color for the background color
 //random color generation code inspired by answers at Stack Overflow:
+//https://stackoverflow.com/questions/23095637/how-do-you-do-a-random-rbg-in-javascript
 function getRandomColor () {
   var topValue = 256;
   //generate random red, green and blue values
@@ -118,7 +119,7 @@ function getRandomColor () {
 function printQuote () {
   var randomQuote = getRandomQuote();
   var html = '';
-  //HTML template obtained from
+  //HTML template obtained from Team Treehouse:
   //https://teamtreehouse.com/projects/a-random-quote-generator
   //generate HTML for quote and source properties
   html += '<p class="quote">' + randomQuote.quote + '</p>';
@@ -136,14 +137,12 @@ function printQuote () {
   }
   //closes the <p> element in the HTML
   html += '</p>';
-  //test the function printQuote() in the console
-  console.log(html);
   //change the 'innerHTML' of the div with class 'quote-box'
   //to the generated html
   document.getElementById('quote-box').innerHTML = html;
   //change the background color of the web page each time the
   //a new quote is generated
-  document.getElementsByTagName('body').style.background-color="";
+  document.getElementsByTagName('body').style.backgroundColor = getRandomColor();
 }
 
 //this function provides functionality to the 'Show another quote' button
