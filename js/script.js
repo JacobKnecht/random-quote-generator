@@ -107,13 +107,28 @@ var quotes = [
 //test the array 'quotes' in the console
 console.log(quotes);
 
+//function to generate a random index value between 0 and the length of the
+//array of quotes
+function getRandomIndex () {
+  return Math.floor(Math.random() * quotes.length);
+}
+
+//test the function getRandomIndex in the console
+console.log(getRandomIndex());
+
 /***
   Create the `getRandomQuote` function to:
    - Create a variable to store a random number
    - Cse the random number to `return` a random quote object from the `quotes` array.
 ***/
 
+function getRandomQuote () {
+  var randomNum = getRandomIndex();
+  return quotes[randomNum];
+}
 
+//test the function getRandomQuote in the console
+console.log(getRandomQuote());
 
 
 /***
