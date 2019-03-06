@@ -140,9 +140,11 @@ function printQuote () {
   //change the 'innerHTML' of the div with class 'quote-box'
   //to the generated html
   document.getElementById('quote-box').innerHTML = html;
-  //change the background color of the web page each time the
-  //a new quote is generated
-  document.getElementsByTagName('body').style.backgroundColor = getRandomColor();
+  //change the background color of the web page and 'Show another quote' button
+  //each time a new quote is generated
+  var randomColor = getRandomColor();
+  document.body.style.backgroundColor = randomColor;
+  document.getElementById('loadQuote').style.backgroundColor = randomColor;
 }
 
 //this function provides functionality to the 'Show another quote' button
