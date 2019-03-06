@@ -101,6 +101,18 @@ function getRandomQuote () {
   return quotes[randomNum];
 }
 
+//creates a function to generate a random color for the background color
+//random color generation code inspired by answers at Stack Overflow:
+function getRandomColor () {
+  var topValue = 256;
+  //generate random red, green and blue values
+  var redValue  = Math.floor(Math.random() * topValue);
+  var greenValue = Math.floor(Math.random() * topValue);
+  var blueValue = Math.floor(Math.random() * topValue);
+  //generate and return random color
+  return 'rgb('+ redValue + ',' + greenValue + ',' + blueValue + ')';
+}
+
 //creates a function to generate the necessary HTML to print the quote to
 //the web browser
 function printQuote () {
@@ -120,7 +132,7 @@ function printQuote () {
     html += '<span class="year">' + randomQuote.year + '</span>';
   }
   if (randomQuote.tags) {
-    html += '<span class="tags">' + randomQuote.tags + '</span>';
+    html += '<br><span class="tags">' + 'tags: ' + randomQuote.tags + '</span>';
   }
   //closes the <p> element in the HTML
   html += '</p>';
@@ -129,6 +141,9 @@ function printQuote () {
   //change the 'innerHTML' of the div with class 'quote-box'
   //to the generated html
   document.getElementById('quote-box').innerHTML = html;
+  //change the background color of the web page each time the
+  //a new quote is generated
+  document.getElementsByTagName('body').style.background-color="";
 }
 
 //this function provides functionality to the 'Show another quote' button
