@@ -20,69 +20,61 @@ var quotes = [
     source:'Andrew Ryan',
     citation:'Bioshock',
     year:'2007',
-    tags:'iconic',
-    id:00
+    tags:'iconic'
   },
   {
-    quote:"Like great works, deep feelings always mean more than" +
+    quote:"Like great works, deep feelings always mean more than " +
       "they are conscious of saying.",
     source:'Albert Camus',
     citation:'The Myth of Sisyphus',
     year:'1942',
-    tags:'wisdom',
-    id:01
+    tags:'wisdom'
   },
   {
-    quote:"Oh, no, it wasn't the airplanes. It was Beauty" +
+    quote:"Oh, no, it wasn't the airplanes. It was Beauty " +
       "that killed the beast!",
     source:'Carl Denham',
     citation:'King Kong',
     year:'1933',
-    tags:'iconic',
-    id:02
+    tags:'iconic'
   },
   {
-    quote:"It's a weapon! It's really powerful. Especially" +
+    quote:"It's a weapon! It's really powerful. Especially " +
       "against living things.",
     source:'Barry Burton',
     citation:'Resident Evil',
     year:'1996',
-    tags:'humor',
-    id:03
+    tags:'humor'
   },
   {
-    quote:"All our dreams can come true — if we have the courage to" +
+    quote:"All our dreams can come true — if we have the courage to " +
       "pursue them.",
     source:'Walt Disney',
     citation:'How to Be Like Walt: Capturing the Magic Every Day of Your Life',
     year:'2004',
-    tags:'inspirational',
-    id:04
+    tags:'inspirational'
   },
   {
-    quote:"On my business card, I am a corporate president. In my mind," +
+    quote:"On my business card, I am a corporate president. In my mind, " +
       "I am a game developer. But in my heart, I am a gamer.",
     source:'Satoru Iwata',
     citation:'2005 GDC Keynote',
     year:'2005',
-    tags:'passion',
-    id:05
+    tags:'passion'
   },
   {
     quote:"Whoever saves one life, saves the world entire.",
     source:'Itzhak Stern',
     citation:"Schindler's List",
     year:'1993',
-    tags:'kindness',
-    id:06
+    tags:'kindness'
   },
   {
     quote:"WITH GREAT POWER THERE MUST ALSO COME--GREAT RESPONSIBILITY!",
     source:'Stan Lee',
     citation:'Amazing Fantasy #15',
     year:'1962',
-    tags:'inspirational',
-    id:07
+    tags:'inspirational'
   },
   {
     quote:"The heart of Man is not compound of lies," +
@@ -90,17 +82,15 @@ var quotes = [
     source:'J.R.R. Tolkien',
     citation:'Mythopoeia',
     year:'1931',
-    tags:'wisdom',
-    id:08
+    tags:'wisdom'
   },
   {
-    quote:"I hated every minute of it. But I said to myself," +
+    quote:"I hated every minute of it. But I said to myself, " +
       "'Suffer now, and live the rest of your life as a champion'.",
     source:'Muhammad Ali',
     citation:'"Ali: Born Again!" Newsweek',
     year:'1978',
-    tags:'inspirational',
-    id:09
+    tags:'inspirational'
   },
 ]
 
