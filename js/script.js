@@ -20,7 +20,7 @@ var quotes = [
     source:'Andrew Ryan',
     citation:'Bioshock',
     year:'2007',
-    type:'iconic',
+    tags:'iconic',
     id:00
   },
   {
@@ -29,7 +29,7 @@ var quotes = [
     source:'Albert Camus',
     citation:'The Myth of Sisyphus',
     year:'1942',
-    type:'wisdom',
+    tags:'wisdom',
     id:01
   },
   {
@@ -38,7 +38,7 @@ var quotes = [
     source:'Carl Denham',
     citation:'King Kong',
     year:'1933',
-    type:'iconic',
+    tags:'iconic',
     id:02
   },
   {
@@ -47,7 +47,7 @@ var quotes = [
     source:'Barry Burton',
     citation:'Resident Evil',
     year:'1996',
-    type:'humor',
+    tags:'humor',
     id:03
   },
   {
@@ -56,7 +56,7 @@ var quotes = [
     source:'Walt Disney',
     citation:'How to Be Like Walt: Capturing the Magic Every Day of Your Life',
     year:'2004',
-    type:'inspirational',
+    tags:'inspirational',
     id:04
   },
   {
@@ -65,7 +65,7 @@ var quotes = [
     source:'Satoru Iwata',
     citation:'2005 GDC Keynote',
     year:'2005',
-    type:'passion',
+    tags:'passion',
     id:05
   },
   {
@@ -73,7 +73,7 @@ var quotes = [
     source:'Itzhak Stern',
     citation:"Schindler's List",
     year:'1993',
-    type:'kindness',
+    tags:'kindness',
     id:06
   },
   {
@@ -81,7 +81,7 @@ var quotes = [
     source:'Stan Lee',
     citation:'Amazing Fantasy #15',
     year:'1962',
-    type:'inspirational',
+    tags:'inspirational',
     id:07
   },
   {
@@ -90,7 +90,7 @@ var quotes = [
     source:'J.R.R. Tolkien',
     citation:'Mythopoeia',
     year:'1931',
-    type:'wisdom',
+    tags:'wisdom',
     id:08
   },
   {
@@ -99,7 +99,7 @@ var quotes = [
     source:'Muhammad Ali',
     citation:'"Ali: Born Again!" Newsweek',
     year:'1978',
-    type:'inspirational',
+    tags:'inspirational',
     id:09
   },
 ]
@@ -113,7 +113,7 @@ function getRandomIndex () {
   return Math.floor(Math.random() * quotes.length);
 }
 
-//test the function getRandomIndex in the console
+//test the function getRandomIndex() in the console
 console.log(getRandomIndex());
 
 /***
@@ -127,7 +127,7 @@ function getRandomQuote () {
   return quotes[randomNum];
 }
 
-//test the function getRandomQuote in the console
+//test the function getRandomQuote() in the console
 console.log(getRandomQuote());
 
 
@@ -144,7 +144,33 @@ console.log(getRandomQuote());
    - Set the `innerHTML` of the `quote-box` div to the HTML string.
 ***/
 
-
+function printQuote () {
+  var randomQuote = getRandomQuote();
+  var html = '';
+  //HTML template obtained from
+  //https://teamtreehouse.com/projects/a-random-quote-generator
+  //generate HTML for quote and source properties
+  html += '<p class="quote">' + randomQuote.quote + '</p>';
+  html += '<p class="source">' + randomQuote.source;
+  //the conditionals check if the citation, year and tags properties exist
+  //if they do, the necessary HTML is generated
+  if (randomQuote.citation) {
+    html += '<span class="citation">' + randomQuote.citation + '</span>';
+  }
+  if (randomQuote.year) {
+    html += '<span class="year">' + randomQuote.year + '</span>';
+  }
+  if (randomQuote.tags) {
+    html += '<span class="tags">' + randomQuote.tags + '</span>';
+  }
+  //closes the <p> element in the HTML
+  html += '</p>';
+  //test the function printQuote() in the console
+  console.log(html);
+  //change the 'innerHTML' of the div with class 'quote-box'
+  //to the generated html
+  document.getElementById('quote-box').innerHTML = html;
+}
 
 
 /***
