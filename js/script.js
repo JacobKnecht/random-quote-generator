@@ -14,7 +14,7 @@ var quotes = [
     quote:"We all make choices, but in the end, our choices make us.",
     source:'Andrew Ryan',
     citation:'Bioshock',
-    year:'(2007)',
+    year:2007,
     tags:"'iconic'"
   },
   {
@@ -22,7 +22,7 @@ var quotes = [
       "they are conscious of saying.",
     source:'Albert Camus',
     citation:'The Myth of Sisyphus',
-    year:'(1942)',
+    year:1942,
     tags:"'wisdom'"
   },
   {
@@ -30,7 +30,7 @@ var quotes = [
       "that killed the beast!",
     source:'Carl Denham',
     citation:'King Kong',
-    year:'(1933)',
+    year:1933,
     tags:"'iconic'"
   },
   {
@@ -38,7 +38,7 @@ var quotes = [
       "against living things.",
     source:'Barry Burton',
     citation:'Resident Evil',
-    year:'(1996)',
+    year:1996,
     tags:"'humor'"
   },
   {
@@ -46,7 +46,7 @@ var quotes = [
       "pursue them.",
     source:'Walt Disney',
     citation:'How to Be Like Walt: Capturing the Magic Every Day of Your Life',
-    year:'(2004)',
+    year:2004,
     tags:"'inspirational'"
   },
   {
@@ -54,21 +54,21 @@ var quotes = [
       "I am a game developer. But in my heart, I am a gamer.",
     source:'Satoru Iwata',
     citation:'2005 GDC Keynote',
-    year:'(2005)',
+    year:2005,
     tags:"'passion'"
   },
   {
     quote:"Whoever saves one life, saves the world entire.",
     source:'Itzhak Stern',
     citation:"Schindler's List",
-    year:'(1993)',
+    year:1993,
     tags:"'kindness'"
   },
   {
     quote:"WITH GREAT POWER THERE MUST ALSO COME--GREAT RESPONSIBILITY!",
     source:'Stan Lee',
     citation:'Amazing Fantasy #15',
-    year:'(1962)',
+    year:1962,
     tags:"'inspirational'"
   },
   {
@@ -76,7 +76,7 @@ var quotes = [
       "but draws some wisdom from the only Wise.",
     source:'J.R.R. Tolkien',
     citation:'Mythopoeia',
-    year:'(1931)',
+    year:1931,
     tags:"'wisdom'"
   },
   {
@@ -84,7 +84,7 @@ var quotes = [
       "'Suffer now, and live the rest of your life as a champion'.",
     source:'Muhammad Ali',
     citation:'"Ali: Born Again!" Newsweek',
-    year:'(1978)',
+    year:1978,
     tags:"'inspirational'"
   },
 ]
