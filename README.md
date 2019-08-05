@@ -1,4 +1,4 @@
-# Treehouse Techdegree Project 1 - Random Quote Generator
+# Random Quote Generator
 
 Purpose:
   This application in this project creates a simple web page that displays a
